@@ -1,0 +1,23 @@
+
+<table>
+  <tr>
+      <th>SPID</th>
+      <th>Name</th>
+      <th>Action</th>
+  </tr>
+  <tr *ngFor = "let p of salespeople">
+      <td> {{p.spid}} </td>
+      <td> {{p.name}} </td>
+      <td>
+          <button (click)="updateButton(person.spid)">Update</button>
+          <button (click)="deleteButton(person.spid)">Delete</button>
+      
+      </td>
+      
+  </tr>
+
+</table>
+
+<a>{{error}}</a>
+<br/>
+<a href="/newSalesPerson">New Salesperson</a>

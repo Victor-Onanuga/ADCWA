@@ -1,0 +1,10 @@
+<p>new-sales-person works!</p>
+
+<form>
+    SPID: <input type ="text" name="spid" [(ngModel)]="spSPID">
+    Name: <input type ="text"  name="name" [(ngModel)]="spName">
+    <br>
+    <button (click)="saveButton()">Save</button>
+</form>
+
+{{error.error.message}}
